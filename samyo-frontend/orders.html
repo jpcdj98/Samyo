@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My orders – Samyo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bottle" viewBox="0 0 100 150"><rect x="38" y="4" width="24" height="26" rx="5" fill="#2A1740"/><rect x="43" y="30" width="14" height="10" fill="#8E7AA8"/><rect x="14" y="40" width="72" height="104" rx="22" fill="var(--bottle)"/><rect x="22" y="52" width="9" height="74" rx="4.5" fill="#fff" opacity=".4"/><rect x="34" y="82" width="44" height="28" rx="4" fill="#fff" opacity=".85"/><rect x="40" y="90" width="32" height="3" rx="1.5" fill="#2A1740"/><rect x="40" y="97" width="20" height="3" rx="1.5" fill="#2A1740" opacity=".5"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="container">
+  <header class="site-header">
+    <a class="brand" href="index.html">Samyo</a>
+    <nav class="nav" aria-label="Main"><a class="nav__link" href="shop.html">Shop</a><a class="nav__link" href="orders.html" aria-current="page">Orders</a><a class="nav__link" href="login.html">Login</a><a class="nav__link" href="cart.html">Cart<span class="nav__badge">2</span></a></nav>
+  </header>
+  <main id="main" class="page">
+    <h1 class="page__title" style="font-size:clamp(32px,5vw,48px)">My orders</h1>
+    <!-- BACKEND: list the signed-in customer's orders -->
+    <article class="order-card" data-order-id="SMY-1042">
+      <div class="order-card__top"><div><h3>SMY-1042</h3><p class="muted">Dalandan 50 ml × 1</p></div>
+        <div><span class="tag">Preparing</span> <strong style="margin-left:10px">₱1,490</strong></div></div>
+      <ol class="steps"><li class="is-done">Placed</li><li class="is-done">Preparing</li><li>Shipped</li><li>Delivered</li></ol>
+    </article>
+    <article class="order-card" data-order-id="SMY-1017">
+      <div class="order-card__top"><div><h3>SMY-1017</h3><p class="muted">Barako 100 ml × 1, Niyog 30 ml × 1</p></div>
+        <div><span class="tag">Shipped</span> <strong style="margin-left:10px">₱4,670</strong></div></div>
+      <ol class="steps"><li class="is-done">Placed</li><li class="is-done">Preparing</li><li class="is-done">Shipped</li><li>Delivered</li></ol>
+    </article>
+    <article class="order-card" data-order-id="SMY-0986">
+      <div class="order-card__top"><div><h3>SMY-0986</h3><p class="muted">Sampaguita 50 ml × 2</p></div>
+        <div><span class="tag tag--ok">Delivered</span> <strong style="margin-left:10px">₱3,780</strong></div></div>
+      <ol class="steps"><li class="is-done">Placed</li><li class="is-done">Preparing</li><li class="is-done">Shipped</li><li class="is-done">Delivered</li></ol>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <ul class="perks"><li>Free delivery over ₱1,500</li><li>GCash and Maya</li><li>Cash on delivery</li></ul>
+    <p>© 2026 Samyo · Made in the Philippines</p>
+  </footer>
+</div>
+</body>
+</html>

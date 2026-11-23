@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart – Samyo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bottle" viewBox="0 0 100 150"><rect x="38" y="4" width="24" height="26" rx="5" fill="#2A1740"/><rect x="43" y="30" width="14" height="10" fill="#8E7AA8"/><rect x="14" y="40" width="72" height="104" rx="22" fill="var(--bottle)"/><rect x="22" y="52" width="9" height="74" rx="4.5" fill="#fff" opacity=".4"/><rect x="34" y="82" width="44" height="28" rx="4" fill="#fff" opacity=".85"/><rect x="40" y="90" width="32" height="3" rx="1.5" fill="#2A1740"/><rect x="40" y="97" width="20" height="3" rx="1.5" fill="#2A1740" opacity=".5"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="container">
+  <header class="site-header">
+    <a class="brand" href="index.html">Samyo</a>
+    <nav class="nav" aria-label="Main"><a class="nav__link" href="shop.html">Shop</a><a class="nav__link" href="orders.html">Orders</a><a class="nav__link" href="login.html">Login</a><a class="nav__link" href="cart.html" aria-current="page">Cart<span class="nav__badge">2</span></a></nav>
+  </header>
+  <main id="main" class="page">
+    <h1 class="page__title" style="font-size:clamp(32px,5vw,48px)">Your cart</h1>
+    <div class="split">
+      <form class="panel" action="cart.html" method="post">
+        <!-- BACKEND: loop over cart items -->
+      <article class="cart-item" data-product-id="dalandan">
+        <div class="cart-item__art" style="--tint:#FFE9C2;--bottle:#FF9F1C"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></div>
+        <div><h3 style="font-size:19px">Dalandan</h3><p class="muted">50 ml · ₱1,490</p>
+          <div class="cart-item__actions"><label class="sr-only" for="q-dalandan">Quantity</label>
+          <input class="input input--qty" id="q-dalandan" name="qty_dalandan" type="number" min="1" value="1">
+          <button class="link-button" type="submit" name="remove" value="dalandan">Remove</button></div></div>
+        <strong>₱1,490</strong>
+      </article>
+      <article class="cart-item" data-product-id="barako">
+        <div class="cart-item__art" style="--tint:#E7D3C0;--bottle:#7A4B2A"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></div>
+        <div><h3 style="font-size:19px">Barako</h3><p class="muted">100 ml · ₱3,720</p>
+          <div class="cart-item__actions"><label class="sr-only" for="q-barako">Quantity</label>
+          <input class="input input--qty" id="q-barako" name="qty_barako" type="number" min="1" value="1">
+          <button class="link-button" type="submit" name="remove" value="barako">Remove</button></div></div>
+        <strong>₱3,720</strong>
+      </article>
+      </form>
+      <aside class="panel" aria-label="Order summary">
+        <p class="muted">You get free delivery.</p>
+        <div class="progress"><div class="progress__bar" style="width:100%"></div></div>
+        <div class="summary__row"><span>Subtotal</span><span>₱5,210</span></div>
+        <div class="summary__row"><span>Delivery</span><span>Free</span></div>
+        <div class="summary__row summary__total"><span>Total</span><span>₱5,210</span></div>
+        <a class="btn btn--block" href="checkout.html" style="margin-top:16px">Checkout</a>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <ul class="perks"><li>Free delivery over ₱1,500</li><li>GCash and Maya</li><li>Cash on delivery</li></ul>
+    <p>© 2026 Samyo · Made in the Philippines</p>
+  </footer>
+</div>
+</body>
+</html>

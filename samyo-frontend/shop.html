@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop – Samyo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bottle" viewBox="0 0 100 150"><rect x="38" y="4" width="24" height="26" rx="5" fill="#2A1740"/><rect x="43" y="30" width="14" height="10" fill="#8E7AA8"/><rect x="14" y="40" width="72" height="104" rx="22" fill="var(--bottle)"/><rect x="22" y="52" width="9" height="74" rx="4.5" fill="#fff" opacity=".4"/><rect x="34" y="82" width="44" height="28" rx="4" fill="#fff" opacity=".85"/><rect x="40" y="90" width="32" height="3" rx="1.5" fill="#2A1740"/><rect x="40" y="97" width="20" height="3" rx="1.5" fill="#2A1740" opacity=".5"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="container">
+  <header class="site-header">
+    <a class="brand" href="index.html">Samyo</a>
+    <nav class="nav" aria-label="Main"><a class="nav__link" href="shop.html" aria-current="page">Shop</a><a class="nav__link" href="orders.html">Orders</a><a class="nav__link" href="login.html">Login</a><a class="nav__link" href="cart.html">Cart<span class="nav__badge">2</span></a></nav>
+  </header>
+  <main id="main" class="page">
+    <h1 class="page__title" style="font-size:clamp(32px,5vw,48px)">Shop</h1>
+    <!-- BACKEND: filter by ?category= -->
+    <nav class="chip-row" aria-label="Scent filter"><a class="chip" href="shop.html" aria-current="true">All</a><a class="chip" href="shop.html?category=floral">Floral</a><a class="chip" href="shop.html?category=fresh">Fresh</a><a class="chip" href="shop.html?category=woody">Woody</a><a class="chip" href="shop.html?category=sweet">Sweet</a></nav>
+    <div class="product-grid">
+<article class="product-card" data-product-id="sampaguita">
+  <a class="product-card__art" href="product.html?id=sampaguita" style="--tint:#F7F3FF;--bottle:#CBB8F0" aria-label="View Sampaguita"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></a>
+  <h3>Sampaguita</h3>
+  <p class="product-card__meta">Floral · 50 ml</p>
+  <div class="product-card__footer"><span class="price">₱1,890</span><a class="btn btn--ghost" href="product.html?id=sampaguita">View</a></div>
+</article><article class="product-card" data-product-id="dalandan">
+  <a class="product-card__art" href="product.html?id=dalandan" style="--tint:#FFE9C2;--bottle:#FF9F1C" aria-label="View Dalandan"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></a>
+  <h3>Dalandan</h3>
+  <p class="product-card__meta">Fresh · 50 ml</p>
+  <div class="product-card__footer"><span class="price">₱1,490</span><a class="btn btn--ghost" href="product.html?id=dalandan">View</a></div>
+</article><article class="product-card" data-product-id="ylang">
+  <a class="product-card__art" href="product.html?id=ylang" style="--tint:#FFF3B8;--bottle:#E8C43A" aria-label="View Ylang"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></a>
+  <h3>Ylang</h3>
+  <p class="product-card__meta">Floral · 50 ml</p>
+  <div class="product-card__footer"><span class="price">₱1,990</span><a class="btn btn--ghost" href="product.html?id=ylang">View</a></div>
+</article><article class="product-card" data-product-id="barako">
+  <a class="product-card__art" href="product.html?id=barako" style="--tint:#E7D3C0;--bottle:#7A4B2A" aria-label="View Barako"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></a>
+  <h3>Barako</h3>
+  <p class="product-card__meta">Woody · 50 ml</p>
+  <div class="product-card__footer"><span class="price">₱2,190</span><a class="btn btn--ghost" href="product.html?id=barako">View</a></div>
+</article><article class="product-card" data-product-id="niyog">
+  <a class="product-card__art" href="product.html?id=niyog" style="--tint:#E2F4EA;--bottle:#6CC5A0" aria-label="View Niyog"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></a>
+  <h3>Niyog</h3>
+  <p class="product-card__meta">Sweet · 50 ml</p>
+  <div class="product-card__footer"><span class="price">₱1,590</span><a class="btn btn--ghost" href="product.html?id=niyog">View</a></div>
+</article><article class="product-card" data-product-id="kalachuchi">
+  <a class="product-card__art" href="product.html?id=kalachuchi" style="--tint:#FFD9E4;--bottle:#EE7FA2" aria-label="View Kalachuchi"><svg class="bottle" viewBox="0 0 100 150" aria-hidden="true"><use href="#bottle"/></svg></a>
+  <h3>Kalachuchi</h3>
+  <p class="product-card__meta">Sweet · 50 ml</p>
+  <div class="product-card__footer"><span class="price">₱1,790</span><a class="btn btn--ghost" href="product.html?id=kalachuchi">View</a></div>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <ul class="perks"><li>Free delivery over ₱1,500</li><li>GCash and Maya</li><li>Cash on delivery</li></ul>
+    <p>© 2026 Samyo · Made in the Philippines</p>
+  </footer>
+</div>
+</body>
+</html>
